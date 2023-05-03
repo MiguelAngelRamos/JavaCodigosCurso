@@ -65,8 +65,30 @@ public class RegistrosUsuariosSalud {
       
       System.out.println("Funcion: " + funcion);
       System.out.println("Departamento: " +  departamento);
+      
+    } else if("medico".equalsIgnoreCase(tipoUsuario)) {
+      // Médico: especialidad, años de experiencia, número de colegiado
+      System.out.println("Ingrese la especialidad: ");
+      String especialidad = sc.nextLine();
+      
+      System.out.println("Ingrese años de experiencia: ");
+      String aniosExperiencia = sc.nextLine();
+      
+      System.out.println("Ingrese el numero de colegiado: ");
+      String numColegiado = sc.nextLine();
+      
+      System.out.println("Usuario registrado: ");
+      System.out.println("Nombre: " + nombre);
+      System.out.println("Fecha de nacimiento: " + fecha);
+      System.out.println("Número de indentificación: " + numIdentificacion);
+      
+      System.out.println("Años de experiencia: " + aniosExperiencia);
+      System.out.println("Especialidad: " + especialidad);
+      System.out.println("Numero de colegiado: " + numColegiado);
+    } else {
+      System.out.println("No existe este tipo de Usuario");
     }
    
   
-  }
-}
+  } // fin del main
+} // fin de la clase
