@@ -89,6 +89,6 @@ public class RegistrosUsuariosSalud {
       System.out.println("No existe este tipo de Usuario");
     }
    
-  
+   sc.close();
   } // fin del main
 } // fin de la clase
