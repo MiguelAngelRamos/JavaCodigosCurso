@@ -22,6 +22,7 @@ public class AprendiendoArrays {
       numeros[i] = sc.nextInt();
     }
     
+    // imprimir el array con los numeros ingresados
     imprimirArray(numeros);
     
     // PROGREMOS EL MENU!
