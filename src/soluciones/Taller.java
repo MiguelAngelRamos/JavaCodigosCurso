@@ -28,7 +28,7 @@ public class Taller {
     sc.nextLine();
     System.out.println("Ingrese el numero de participantes:");
     int numParticipantes = sc.nextInt();
-    
+    sc.nextLine();
     // matriz[fila, columna]
     String [][] matriz = new String[numParticipantes][3];
     
@@ -49,6 +49,39 @@ public class Taller {
       // VAMOS AL MINI BREAK DE 5 MIN
     }
     
+ 
+    int suma = 0;
+    int mayor = Integer.MIN_VALUE; // mayor voy a tener el valor minimo de que puede tener un entero
+    int menor = Integer.MAX_VALUE; // voy a tener el maximo que puede tener un entero
+   
+    
+    
+    for(int i =0; i < numParticipantes; i++) {
+      int calificacion = Integer.parseInt(matriz[i][2]);
+      suma += calificacion; // suma = suma + calificacion;
+      
+      if(calificacion > mayor) {
+        mayor = calificacion;
+      }
+      
+      if(calificacion < menor) {
+        menor = calificacion;
+      }          
+    } // for de ordenamiento
+    
+    // conversión
+    double promedio = (double) suma/numParticipantes;
+    
+    // vamos a imprimir
+    
+    System.out.println("Detalles del taller: ");
+    System.out.println("Fecha: " + fecha);
+    System.out.println("Hora: " + hora);
+    System.out.println("Lugar: " + lugar);
+    System.out.println("Duración: " + duracion);
+    System.out.println("Promedio de calificaciones: " + promedio);
+    System.out.println("Calificación más alta: " + mayor);
+    System.out.println("Calificación más baja: " + menor);
     
   }
 }
