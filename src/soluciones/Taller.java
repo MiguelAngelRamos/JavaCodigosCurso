@@ -54,8 +54,6 @@ public class Taller {
     int mayor = Integer.MIN_VALUE; // mayor voy a tener el valor minimo de que puede tener un entero
     int menor = Integer.MAX_VALUE; // voy a tener el maximo que puede tener un entero
    
-    
-    
     for(int i =0; i < numParticipantes; i++) {
       int calificacion = Integer.parseInt(matriz[i][2]);
       suma += calificacion; // suma = suma + calificacion;
