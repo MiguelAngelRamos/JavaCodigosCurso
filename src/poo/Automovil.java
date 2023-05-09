@@ -10,21 +10,27 @@ public class Automovil {
   private double precio;
   
   // Constructor
- 
-  public Automovil(String marca, String color, int numRuedas, int numPuertas, double precio) {
+  public Automovil() {
+    
+  }
+
+  public Automovil(String marca) {
+    this.marca = marca;
+  }
   
+  public Automovil(String marca, String color, int numRuedas, int numPuertas, double precio) {
     this.marca = marca;
     this.color = color;
     this.numRuedas = numRuedas;
     this.numPuertas = numPuertas;
     this.precio = precio;
-    
   }
+  
   
   // métodos de la clase Automovil
   // arrancar
   public void arrancar() {
-    System.out.println("El automóvil esta arracando...");
+    System.out.println("El automóvil marca esta arrancando...");
   }
   // acelerar
   public void acelerar() {
@@ -35,5 +41,4 @@ public class Automovil {
     System.out.println("El automóvil esta frenando...");
   }
   
-
 }
