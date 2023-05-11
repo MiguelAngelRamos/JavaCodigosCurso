@@ -11,6 +11,11 @@ public class Persona {
   private double altura;
   private String genero;
   
+ 
+  
+  // PROPIEDADES DE CLASE
+  // get es para obtener información
+  // set es para asignar información 
   
   public String getNombre() {
     return nombre;

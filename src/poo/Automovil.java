@@ -30,7 +30,7 @@ public class Automovil {
   // métodos de la clase Automovil
   // arrancar
   public void arrancar() {
-    System.out.println("El automóvil marca esta arrancando...");
+    System.out.println("El automóvil marca esta arrancando...:" + marca);
   }
   // acelerar
   public void acelerar() {
